@@ -1,0 +1,57 @@
+@import "../../app.scss";
+.navbar {
+  position: fixed;
+  z-index: 999;
+  height: 75px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  .left {
+    .logo1 {
+      position: relative;
+      cursor: pointer;
+      width: 83px;
+      margin: 16px 18px 16px 0px;
+      height: 42px;
+      left: 40px;
+      padding-right: 15px;
+    }
+    .logo1-speparate {
+      position: absolute;
+      content: "";
+      display: block;
+      border-right: 1px solid var(--main-color);
+      height: 48px;
+      top: 0;
+    }
+    .logo2 {
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 148px;
+    }
+  }
+  .right {
+    .account {
+      position: absolute;
+      right: 110px;
+      top: 23px;
+    }
+    a {
+      position: absolute;
+      color: var(--main-color);
+      right: 58px;
+      top: 28px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+}
