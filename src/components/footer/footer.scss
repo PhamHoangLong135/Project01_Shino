@@ -1,25 +1,48 @@
-@import '../../app.scss';
+@import "../../app.scss";
 .footer {
-    position: relative;
-    width: 100%;
-    height: 38px;
-    bottom: 0;
-    font-size: 12px;
-line-height: 15px;
-    background: var(--main-color);
-    .container {
-        color: var(--white-text);
-        display: flex;
-        justify-content: space-between;
-        .left {
-            margin: 13px 20px;
-        }
-        .right {
-            margin: 13px 20px;
-            a {
-                margin: 0 10px;
-                color: var(--white-text);
-            }
-        }
+  width: 1440px;
+  height: 38px;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 15px;
+  background: var(--main-color);
+
+  .container {
+    color: var(--white-text);
+    display: flex;
+    justify-content: space-between;
+    .left {
+      margin: 13px 20px;
+      @include tablet {
+        margin-left: 40px;
+      }
     }
+    .right {
+      margin: 13px 20px;
+      @include tablet {
+        margin-right: 34px;
+      }
+      a {
+        margin: 0 10px;
+        color: var(--white-text);
+      }
+    }
+  }
+}
+@include tablet {
+  .footer {
+    width: 1024px;
+  }
+}
+
+@include mobile {
+  .footer {
+    width: 414px;
+    height: 117px;
+    .container {
+      display: block;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
 }

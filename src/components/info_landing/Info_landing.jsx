@@ -31,7 +31,7 @@ const Info_landing = () => {
       <div className="info-bottom">
         <div className="info-bottom-left">
           <h3>How does our recommender work?</h3>
-          <p>
+          <p className="simple-text">
             With 3 simple steps, you will receive a recommedation for courses
             that you can attend to strengthen your teaching competencies.
           </p>
@@ -53,7 +53,7 @@ const Info_landing = () => {
                 <p>Step 3</p>
               </div>
               <div className="step3-text text">
-                Review recommendation and indicate interest
+                Review recommendation <div className="step3-text-crop">and indicate interest</div>
               </div>
             </div>
           </div>
@@ -62,6 +62,7 @@ const Info_landing = () => {
               It’s that simple. Sign in with your SUSS ID and password to begin.
             </p>
             <button>Sign in</button>
+            <div className="line"></div>
           </div>
 
           <img src={Ellipse_red} alt="" />
