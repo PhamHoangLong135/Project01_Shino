@@ -10,29 +10,12 @@
   position: relative;
   height: 100%;
   width: 1440px;
-  @include tablet {
-    margin-left: -132px;
-    margin-top: -50px;
-  }
-  @include mobile {
-    width: 414px;
-    margin-top: 240px;
-    margin-left: 26px;
-  }
 
   .ellipse_red-1 {
     position: absolute;
     margin-top: -220px;
     margin-left: 600px;
     z-index: -1;
-    @include tablet {
-      margin-top: -155px;
-      margin-left: 635px;
-    }
-    @include mobile {
-      margin-top: -80%;
-      margin-left: -160px;
-    }
   }
   .ellipse_blue {
     position: absolute;
@@ -40,14 +23,6 @@
     margin-right: -130px;
     right: 0;
     z-index: -2;
-    @include tablet {
-      margin-top: 43px;
-      margin-right: 150px;
-    }
-    @include mobile {
-      margin-top: -190px;
-      margin-right: -130px;
-    }
   }
   .info-top {
     margin-top: 100px;
@@ -55,17 +30,9 @@
     width: 630px;
     display: flex;
     justify-content: space-between;
-
-    @include mobile {
-      width: 414px;
-      margin-left: 6px;
-    }
     .info-intro {
       margin-top: 60px;
       width: 300px;
-      @include tablet {
-        margin-top: 80px;
-      }
       h2 {
         width: 631px;
         height: 88px;
@@ -75,17 +42,6 @@
         font-size: 36px;
         line-height: 44px;
         text-transform: capitalize;
-        @include tablet {
-          width: 504px;
-          font-size: 30px;
-          line-height: 36px;
-        }
-        @include mobile {
-          width: 326px;
-          height: 148px;
-          margin: 20px 0;
-          line-height: 36px;
-        }
       }
       h1 {
         width: 411px;
@@ -99,17 +55,6 @@
         line-height: 59px;
         text-transform: uppercase;
         color: #da2a1b;
-        @include tablet {
-          margin-top: -20px;
-          font-size: 36px;
-          line-height: 43px;
-        }
-        @include mobile {
-          width: 240px;
-          height: 34px;
-          font-size: 28px;
-          line-height: 34px;
-        }
       }
       p {
         width: 608px;
@@ -122,13 +67,6 @@
         line-height: 17px;
         text-align: justify;
         color: #000000;
-        @include tablet {
-          width: 514px;
-        }
-        @include mobile {
-          width: 366px;
-          height: 136px;
-        }
       }
     }
     .img-area {
@@ -137,18 +75,6 @@
         margin-top: -305px;
         width: 623px;
         height: 623px;
-        @include tablet {
-          width: 455px;
-          height: 455px;
-          margin-left: 292px;
-          margin-top: -155px;
-        }
-        @include mobile {
-          margin-left: -268px;
-          margin-top: -328px;
-          width: 393px;
-          height: 393px;
-        }
       }
       .line-brown {
         position: absolute;
@@ -156,12 +82,6 @@
         height: 32px;
         right: 0;
         background: #c4c4c4;
-        @include tablet {
-          visibility: hidden;
-        }
-        @include mobile {
-          visibility: hidden;
-        }
       }
     }
   }
@@ -170,13 +90,6 @@
     margin-top: 54px;
     margin-left: 148px;
     display: inline-flex;
-    @include tablet {
-      margin-bottom: 50px;
-    }
-    @include mobile {
-      display: block;
-      margin-left: -50px;
-    }
 
     button {
       height: 38px;
@@ -196,28 +109,12 @@
     }
     .info-bottom-left {
       width: 608px;
-      @include tablet {
-        width: 514px;
-      }
-      @include mobile {
-        width: 366px;
-      }
       h3 {
         width: 541px;
         font-size: 30px;
         padding: 5px 0 5px;
         line-height: 37px;
         color: var(--main-color);
-        @include tablet {
-          font-size: 20px;
-          line-height: 24px;
-          margin-left: 74px;
-        }
-        @include mobile {
-          width: 247px;
-          text-align: center;
-          padding-left: 30px;
-        }
       }
       p {
         width: 608px;
@@ -227,15 +124,6 @@
         line-height: 17px;
         text-align: justify;
         color: #000000;
-        @include tablet {
-          width: 514px;
-        }
-      }
-      .simple-text {
-        @include mobile {
-          width: 366px;
-          padding-left: 55px;
-        }
       }
       .steps {
         margin-top: 30px;
@@ -243,21 +131,11 @@
         -webkit-justify-content: center;
         display: flex;
         justify-content: center;
-        @include mobile {
-          display: inline-block;
-        }
         .step1,
         .step2,
         .step3 {
           -webkit-flex: 1;
           flex: 1;
-          .step3-text {
-            .step3-text-crop {
-              @include tablet {
-                display: none;
-              }
-            }
-          }
         }
         .cycle {
           border: 4px solid var(--main-color);
@@ -265,10 +143,6 @@
           height: 75px;
           width: 75px;
           margin-left: 46px;
-          @include mobile {
-            display: inline-block;
-            margin-top: 30px;
-          }
           p {
             width: 40px;
             margin-left: 17px;
@@ -284,35 +158,24 @@
           margin-right: 19px;
           text-align: center;
           color: #000000;
-          @include tablet {
-            margin-left: 14px;
-          }
-          @include mobile {
-            display: inline-block;
-            padding-left: 10px;
-          }
         }
       }
       .signin {
         margin-top: 13px;
-        @include mobile {
-          margin-left: 70px;
-        }
         .signin-text {
           margin-left: 64px;
-          @include mobile {
-            width: 204px;
-            text-align: center;
+          .signin-text-crop1 {
+            display: inline-flex;
+          }
+          .signin-text-crop2 {
+            display: none;
           }
         }
         button {
           margin: 30px 0px 50px 230px;
-          @include mobile {
-            width: 120px;
-            margin-left: 100px;
-          }
         }
         .line {
+          display: none;
           width: 358px;
           margin-left: -20px;
           margin-bottom: 30px;
@@ -327,39 +190,16 @@
         left: -124px;
         top: 675px;
         z-index: -3;
-        @include tablet {
-          bottom: 0;
-          left: 7px;
-          top: 755px;
-        }
-        @include mobile {
-          position: absolute;
-          left: -150px;
-          top: 1635px;
-        }
       }
     }
     .info-bottom-right {
       margin-left: -50px;
-      @include tablet {
-        margin-left: 10px;
-      }
-
       h3 {
         font-size: 24px;
         line-height: 29px;
         padding: 5px 0 5px;
         margin-left: 276px;
         color: var(--main-color);
-        @include tablet {
-          font-size: 20px;
-          line-height: 24px;
-          margin-left: 76px;
-        }
-        @include mobile {
-          text-align: center;
-          width: 286px;
-        }
       }
       img {
         display: block;
@@ -367,12 +207,6 @@
         height: 200px;
         margin-left: 409px;
         margin-top: 15px;
-        @include tablet {
-          margin-left: 200px;
-        }
-        @include mobile {
-          margin-left: 155px;
-        }
       }
       p {
         width: 608px;
@@ -385,23 +219,239 @@
       }
       .visit {
         margin-top: 36px;
-        @include tablet {
-          margin-left: -210px;
-          margin-top: 42px;
-        }
         .visit-text {
           margin-left: 280px;
-          @include mobile {
-            text-align: center;
-            width: 261px;
-            padding-left: 25px;
-          }
         }
         button {
           margin-left: 425px;
           margin-top: 30px;
           background-color: #da2a1b;
-          @include mobile {
+        }
+      }
+    }
+  }
+}
+
+//Responsive tablet
+@include tablet {
+  .info-landing {
+    margin-left: -132px;
+    margin-top: -50px;
+    .ellipse_red-1 {
+      margin-top: -155px;
+      margin-left: 635px;
+    }
+    .ellipse_blue {
+      margin-top: 43px;
+      margin-right: 150px;
+    }
+    .info-top {
+      .info-intro {
+        margin-top: 80px;
+        h2 {
+          width: 504px;
+          font-size: 30px;
+          line-height: 36px;
+        }
+        h1 {
+          margin-top: -20px;
+          font-size: 36px;
+          line-height: 43px;
+        }
+        p {
+          width: 514px;
+        }
+      }
+      .img-area {
+        img {
+          width: 455px;
+          height: 455px;
+          margin-left: 292px;
+          margin-top: -155px;
+        }
+        .line-brown {
+          visibility: hidden;
+        }
+      }
+    }
+    .info-bottom {
+      margin-bottom: 50px;
+      .info-bottom-left {
+        width: 514px;
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 74px;
+        }
+        p {
+          width: 514px;
+        }
+        .steps {
+          .step1,
+          .step2,
+          .step3 {
+            .step3-text {
+              .step3-text-crop {
+                display: none;
+              }
+            }
+          }
+          .text {
+            margin-left: 14px;
+          }
+        }
+        .signin {
+          margin-top: 34px;
+          margin-left: -50px;
+          .signin-text {
+            text-align: center;
+            .signin-text-crop1 {
+              display: none;
+            }
+            .signin-text-crop2 {
+              display: inline-flex;
+            }
+          }
+        }
+        img {
+          bottom: 0;
+          left: 7px;
+          top: 755px;
+        }
+      }
+      .info-bottom-right {
+        margin-left: 10px;
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 76px;
+        }
+        img {
+          margin-left: 200px;
+        }
+        .visit {
+          margin-left: -210px;
+          margin-top: 42px;
+        }
+      }
+    }
+  }
+}
+
+//Responsive mobile
+@include mobile {
+  .info-landing {
+    width: 414px;
+    margin-top: 240px;
+    margin-left: 26px;
+    .ellipse_red-1 {
+      margin-top: -80%;
+      margin-left: -160px;
+    }
+    .ellipse_blue {
+      margin-top: -190px;
+      margin-right: -130px;
+    }
+    .info-top {
+      width: 414px;
+      margin-left: 6px;
+      .info-intro {
+        h2 {
+          width: 326px;
+          height: 148px;
+          margin: 20px 0;
+          line-height: 36px;
+        }
+        h1 {
+          width: 240px;
+          height: 34px;
+          font-size: 28px;
+          line-height: 34px;
+        }
+        p {
+          width: 366px;
+          height: 136px;
+        }
+      }
+      .img-area {
+        img {
+          margin-left: -268px;
+          margin-top: -328px;
+          width: 393px;
+          height: 393px;
+        }
+        .line-brown {
+          visibility: hidden;
+        }
+      }
+    }
+    .info-bottom {
+      display: block;
+      margin-left: -50px;
+      .info-bottom-left {
+        width: 366px;
+        h3 {
+          width: 247px;
+          text-align: center;
+          padding-left: 30px;
+        }
+        .simple-text {
+          width: 366px;
+          padding-left: 55px;
+        }
+        .steps {
+          margin-left: 8px;
+          display: inline-block;
+          .cycle {
+            display: inline-block;
+            margin-top: 30px;
+          }
+          .text {
+            display: inline-block;
+            padding-left: 10px;
+          }
+        }
+        .signin {
+          margin-left: 70px;
+          .signin-text {
+            width: 204px;
+            text-align: center;
+            .signin-text-crop1 {
+              display: none;
+            }
+            .signin-text-crop2 {
+              display: inline-flex;
+            }
+          }
+          button {
+            width: 120px;
+            margin-left: 100px;
+          }
+          .line {
+            display: flex;
+          }
+        }
+        img {
+          position: absolute;
+          left: -150px;
+          top: 1635px;
+        }
+      }
+      .info-bottom-right {
+        h3 {
+          text-align: center;
+          width: 286px;
+        }
+        img {
+          margin-left: 155px;
+        }
+        .visit {
+          .visit-text {
+            text-align: center;
+            width: 261px;
+            padding-left: 25px;
+          }
+          button {
             margin-left: 385px;
             margin-bottom: 30px;
           }

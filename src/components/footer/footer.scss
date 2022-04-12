@@ -6,43 +6,42 @@
   font-size: 12px;
   line-height: 15px;
   background: var(--main-color);
-
-  .container {
-    color: var(--white-text);
-    display: flex;
-    justify-content: space-between;
-    .left {
-      margin: 13px 20px;
-      @include tablet {
-        margin-left: 40px;
-      }
-    }
-    .right {
-      margin: 13px 20px;
-      @include tablet {
-        margin-right: 34px;
-      }
-      a {
-        margin: 0 10px;
-        color: var(--white-text);
-      }
+  color: var(--white-text);
+  display: flex;
+  justify-content: space-between;
+  .left {
+    margin: 13px 20px;
+  }
+  .right {
+    margin: 13px 20px;
+    a {
+      margin: 0 10px;
+      color: var(--white-text);
     }
   }
 }
+
+//Responsive tablet
 @include tablet {
   .footer {
     width: 1024px;
+    .left {
+      margin-left: 40px;
+    }
+    .right {
+      margin-right: 34px;
+    }
   }
 }
 
+//Responsive mobile
 @include mobile {
   .footer {
     width: 414px;
     height: 117px;
-    .container {
-      display: block;
-      text-align: center;
-      padding-top: 20px;
-    }
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: -20px;
   }
 }

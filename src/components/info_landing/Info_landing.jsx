@@ -53,13 +53,20 @@ const Info_landing = () => {
                 <p>Step 3</p>
               </div>
               <div className="step3-text text">
-                Review recommendation <div className="step3-text-crop">and indicate interest</div>
+                Review recommendation{" "}
+                <div className="step3-text-crop">and indicate interest</div>
               </div>
             </div>
           </div>
           <div className="signin">
             <p className="signin-text">
-              It’s that simple. Sign in with your SUSS ID and password to begin.
+              It’s that simple.
+              <span className="signin-text-crop1">
+              &ensp;Sign in with your SUSS ID and password to begin.
+              </span>
+              <span className="signin-text-crop2">
+              &ensp;Shall we sign in to begin ?
+              </span>
             </p>
             <button>Sign in</button>
             <div className="line"></div>
