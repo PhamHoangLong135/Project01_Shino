@@ -8,8 +8,8 @@ import Ellipse_blue from "../../imgs/Ellipse_blue.png";
 const Info_landing = () => {
   return (
     <div className="info-landing">
-      <img className="ellipse_blue" src={Ellipse_blue} alt="" />
-      <img className="ellipse_red-1" src={Ellipse_red} alt="" />
+      <img className="ellipse_blue" src={Ellipse_blue} alt="ellipse_blue" />
+      <img className="ellipse_red-1" src={Ellipse_red} alt="ellipse_red-1" />
       <div className="info-top">
         <div className="info-intro">
           <h2>Professional Development in Teaching & Learning (PDTL)</h2>
@@ -24,7 +24,7 @@ const Info_landing = () => {
           </p>
         </div>
         <div className="img-area">
-          <img src={Thumb} alt="" />
+          <img src={Thumb} alt="Thumnail" />
           <p className="line-brown"></p>
         </div>
       </div>
@@ -72,11 +72,11 @@ const Info_landing = () => {
             <div className="line"></div>
           </div>
 
-          <img src={Ellipse_red} alt="" />
+          <img src={Ellipse_red} alt="Ellipse_red" />
         </div>
         <div className="info-bottom-right">
           <h3>View our PDTL Programme Guide</h3>
-          <img src={Imgage} alt="" />
+          <img src={Imgage} alt="Img_here" />
           <div className="visit">
             <p className="visit-text">
               Visit our SUSS Teaching & Learning Centre (TLC) website
